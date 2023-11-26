@@ -373,6 +373,57 @@ function toggleDisplay() {
 </html>
 
 
+<!DOCTYPE html>
+<html 
+<head>
+    
+    <title>Classwork 9</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="image-container">
+            <img src="https://www.intrepidtravel.com/adventures/wp-content/uploads/2021/09/Intrepid-Travel-IntrepidTravel-NZ-SouthIsland-Blue-Pools-Haast-Pass-ss_1231278604.jpg" alt="Filtered Image">
+        </div>
+    </div>
+
+</body>
+</html>
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  margin: 20px;
+}
+
+.image-container {
+  width: 300px;
+  margin: 20px;
+  overflow: hidden;
+}
+
+img {
+  width: 100%;
+  filter: grayscale(50%) blur(2px) brightness(80%);
+  transition: filter 0.5s;
+}
+
+.image-container:hover img {
+  filter: none;
+}
+
+
+
+
+
+
+
 
 
 
