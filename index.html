@@ -309,6 +309,70 @@ p::selection{
 
 
 
+Classwork 8
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p {
+  width: 200px;
+  height: 100px;
+  background-color: #eee;
+  padding: 10px;
+}
+
+p.hidden {
+  visibility: hidden;
+}
+
+p.transparent {
+  opacity: 0;
+}
+
+p.none {
+  display: none;
+}
+</style>
+</head>
+<body>
+<p>This is a paragraph of text.</p>
+
+<button onclick="toggleVisibility()">Toggle Visibility</button>
+<button onclick="toggleOpacity()">Toggle Opacity</button>
+<button onclick="toggleDisplay()">Toggle Display</button>
+
+<script>
+function toggleVisibility() {
+  var paragraph = document.getElementsByTagName('p')[0];
+  if (paragraph.classList.contains("hidden")) {
+    paragraph.classList.remove("hidden");
+  } else {
+    paragraph.classList.add("hidden");
+  }
+}
+
+function toggleOpacity() {
+  var paragraph = document.getElementsByTagName('p')[0];
+  if (paragraph.style.opacity === "0") {
+    paragraph.style.opacity = "1";
+  } else {
+    paragraph.style.opacity = "0";
+  }
+}
+
+function toggleDisplay() {
+  var paragraph = document.getElementsByTagName('p')[0];
+  if (paragraph.style.display === "none") {
+    paragraph.style.display = "block";
+  } else {
+    paragraph.style.display = "none";
+  }
+}</script>
+</body>
+</html>
+
+
 
 
 
