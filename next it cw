@@ -8,7 +8,8 @@
     
     <ol>
         <li><a href="cl7.html">Classwork 7</a></li>
-                
+        <li><a href="cl8.html">Classwork 8</a></li>
+        <li><a href="cl10.html">Classwork 10</a></li>                
     </ol>
 </body>
 </html>
@@ -123,6 +124,58 @@ p::selection {
    h3 {
    background-color: aqua;
    text-align: center;
+}
+</style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style10.css">
+    <title>Animated Interaction</title>
+</head>
+<body>
+
+<div class="container mx-auto mt-10">
+    <div class="flex items-center justify-center">
+        <div class="w-24 h-24 bg-blue-500 rounded-full cursor-pointer animate-bounce">
+            <div class="text-white flex items-center justify-center h-full">
+                Hover Me
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script>
+</body>
+</html>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    max-width: 800px;
+}
+
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+}
+
+.animate-bounce {
+    animation: bounce 1s infinite;
 }
 </style>
 </body>
