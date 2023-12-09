@@ -1,1 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>List of Classworks</title>
+</head>
 
+<body>
+    
+    <ol>
+        <li><a href="cl7.html">Classwork 7</a></li>
+                
+    </ol>
+</body>
+</html>
+body {
+    background-color: navy;
+  }
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Example</title>
+		<link rel="stylesheet" type="text/css" href="style7.css">
+	</head>
+	<body>
+        <a href="index.html">Go home</a>
+		<p>try this!</p>
+    </body>
+</html>
+p:hover {
+    color: aliceblue;
+    font-weight: bold;
+}
+
+p::before {
+    content: 'Hey ';
+    color:peru;
+    font-weight: bold;
+}
+
+p::after {
+    content: 'Thank you';
+    color:rgb(134, 134, 101);
+    font-weight: bold;
+
+    
+}
+
+p::selection {
+    background-color: rgb(156, 113, 58);
+    color:blanchedalmond;
+}
+</body>
+</html>
