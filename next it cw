@@ -12,9 +12,11 @@
     </ol>
 </body>
 </html>
+<style>
 body {
     background-color: navy;
   }
+</style>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -26,6 +28,7 @@ body {
 		<p>try this!</p>
     </body>
 </html>
+<style>
 p:hover {
     color: aliceblue;
     font-weight: bold;
@@ -49,5 +52,6 @@ p::selection {
     background-color: rgb(156, 113, 58);
     color:blanchedalmond;
 }
+</style>
 </body>
 </html>
