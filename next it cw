@@ -53,5 +53,77 @@ p::selection {
     color:blanchedalmond;
 }
 </style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility </title>
+    <link rel="stylesheet" href="style8.css">
+</head>
+<body>
+    <a href="index.html">Go home</a>
+
+    <h3>Visibility property</h3>
+    <p class="visible">visible</p>
+    <p class="hidden">hidden</p>
+
+    <br><br><br>
+    <h3>Opacity</h3>
+    <p class="op_1">Opacity 1</p>
+    <p class="op_0">Opacity 0</p>
+    <p class="op_05">Opacity 0.5</p>
+
+
+    <br><br><br>
+    <h3>Display</h3>
+    <p>The weather is gloomy today. <span class="none">Am I visible</span> Display: none </p>
+    <p>The weather is hot today. <span class="inline">Am I visible</span> Display: none </p>
+    <p>The weather is rainy today. <span class="block">Am I visible</span> Display: none </p>
+
+</body>
+</html>
+<style>
+.visible 
+{
+    visibility: visible;
+}
+
+.hidden {
+    visibility: hidden;
+    
+}
+.op_1 {
+    opacity: 1;
+}
+
+.op_0 {
+    opacity: 0; 
+ }
+.op_5 {
+    opacity: 0.5;
+}
+
+
+.none {
+ display: none;
+ font-weight: bold;
+}
+
+.inline {
+ display: inline ;
+ font-weight: bold;
+}
+ 
+.block {
+    display: block;
+    font-weight: bold;
+   }
+
+   h3 {
+   background-color: aqua;
+   text-align: center;
+}
+</style>
 </body>
 </html>
